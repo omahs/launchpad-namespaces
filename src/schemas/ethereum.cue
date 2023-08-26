@@ -44,6 +44,8 @@ package LaunchpadNamespaces
 
 			flavor?: *"mainnet" | #flavor.#enum
 
+			deployments: *1 | int
+
 			#releaseValues: {
 				mergeValues?: *true | bool
 				values?:      (#map) | [...#map]
@@ -53,6 +55,13 @@ package LaunchpadNamespaces
 			for key, _ in releases {
 				// For overriding this release's values
 				(key)?: #releaseValues
+			}
+
+			[string & =~"^d[0-9]+$"]: {
+				for key, _ in releases {
+					// For overriding this release's values
+					(key)?: #releaseValues
+				}
 			}
 		}
 

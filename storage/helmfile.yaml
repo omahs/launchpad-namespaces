@@ -139,12 +139,6 @@ templates:
       - template: defaults
   
 releases:
-  {{- $release := "openebs" }}
-  - name: 'openebs'
-    inherit:
-    - template: 'openebs'
-    values:
-    {{- tpl $_tplReleaseValues (dict "Values" .Values "release" $release)  | indent 4 -}}
   {{ if has "rawfile" ( .Values | get "features" list ) }}
   {{- $release := "openebs-rawfile-localpv" }}
   - name: 'openebs-rawfile-localpv'
@@ -185,3 +179,9 @@ releases:
     values:
     {{- tpl $_tplReleaseValues (dict "Values" .Values "release" $release)  | indent 4 -}}
   {{- end -}}
+  {{- $release := "openebs" }}
+  - name: 'openebs'
+    inherit:
+    - template: 'openebs'
+    values:
+    {{- tpl $_tplReleaseValues (dict "Values" .Values "release" $release)  | indent 4 -}}

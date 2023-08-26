@@ -109,6 +109,7 @@ helmfiles:
 | Key | Type | Default | Description |
 | :--- | :---: | :--- | :--- |
 annotations | object |  | Add annotations to releases on this namespace |
+deployments | integer | 1 |  |
 erigon | object |  |  |
 erigon.mergeValues | boolean | true |  |
 erigon.values | (object *or* list of objects) |  |  |
