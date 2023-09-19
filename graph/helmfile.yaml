@@ -96,13 +96,13 @@ templates:
   
   graph-node:
     chart: graphops/graph-node
-    version: 0.2.1
+    version: 0.2.2-canary.3
     inherit:
       - template: defaults
   
   graph-network-indexer:
     chart: graphops/graph-network-indexer
-    version: 0.2.1
+    version: 0.2.2-canary.4
     inherit:
       - template: defaults
   
