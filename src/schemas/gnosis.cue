@@ -50,17 +50,17 @@ package LaunchpadNamespaces
 		releases: {
 			nethermind: {
 				chart: {_repositories.graphops.charts.nethermind}
-				_template: {version: "0.4.0"}
+				_template: {version: "0.4.1"}
 			}
 
 			nimbus: {
 				chart: {_repositories.graphops.charts.nimbus}
-				_template: {version: "0.5.1"}
+				_template: {version: "0.5.2"}
 			}
 
 			proxyd: {
 				chart: {_repositories.graphops.charts.proxyd}
-				_template: {version: "0.3.2"}
+				_template: {version: "0.3.4-canary.4"}
 			}
 		}
 
