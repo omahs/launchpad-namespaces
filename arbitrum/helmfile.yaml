@@ -96,19 +96,19 @@ templates:
   
   arbitrum-nitro:
     chart: graphops/arbitrum-nitro
-    version: 0.1.1
+    version: 0.1.2
     inherit:
       - template: defaults
   
   arbitrum-classic:
     chart: graphops/arbitrum-classic
-    version: 0.1.1
+    version: 0.1.2
     inherit:
       - template: defaults
   
   proxyd:
     chart: graphops/proxyd
-    version: 0.2.1
+    version: 0.3.4-canary.4
     inherit:
       - template: defaults
   
