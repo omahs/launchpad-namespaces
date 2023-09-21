@@ -96,13 +96,13 @@ templates:
   
   celo:
     chart: graphops/celo
-    version: 0.1.0
+    version: 0.1.1-canary.2
     inherit:
       - template: defaults
   
   proxyd:
     chart: graphops/proxyd
-    version: 0.1.8
+    version: 0.3.4-canary.4
     inherit:
       - template: defaults
   
